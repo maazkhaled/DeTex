@@ -1,0 +1,64 @@
+
+.login-container {
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../../public/back3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-heading {
+    font-size: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px; /* Add some space between "DETEX" and the login form */
+}
+
+.login-subheading {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.login-form {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 280px; /* Reduced width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group input, .login-button {
+    width: 95%; /* Reduced width */
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px; /* Adjust margin as needed */
+    z-index: 1; /* Ensure the logo is above other elements */
+}
+

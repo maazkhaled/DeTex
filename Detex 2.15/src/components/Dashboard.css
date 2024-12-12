@@ -1,0 +1,220 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns of equal size */
+  grid-template-rows: auto; /* Rows size according to content */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+  color: white;
+  background-color: rgba(30, 40, 50, 0.8); /* Faded dark background with some transparency */
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+  border-radius: 10px; /* Rounds the corners of the container */
+}
+
+.header {
+  grid-column: 1 / -1; /* Full width */
+}
+
+.metrics {
+  margin-top: 150px; /* Adjust this value if needed */
+  grid-column: 1 / 2; /* Span one column */
+  margin-left: 20px; /* Adjust this value if needed */
+
+}
+
+.defect-classification-chart {
+  grid-column: 2 / 3; /* Span one column */
+  width: 100%; /* Make it responsive */
+}
+
+.feedback-doughnut-chart {
+  grid-column: 3 / 4; /* Span one column */
+  width: 100%; /* Make it responsive */
+}
+
+.defects-by-fabric-type-heatmap {
+  grid-column: 4 / 5; /* Span one column */
+  width: 100%; /* Make it responsive */
+}
+
+
+.defects-per-month-chart {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.frequently-recognised-defects-chart {
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+}
+
+/* Example style for the bars in the bar chart */
+.bar {
+background-color: #007bff; /* Bright blue color for bars */
+height: 100px; /* Adjust the height of the bars */
+margin-bottom: 10px; /* Add spacing between bars */
+}
+
+/* Styles for the dropdown button */
+.dropdown-button-container {
+  grid-column: 1 / -1; /* Full width if within a grid layout */
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin: 20px 0;
+}
+
+
+.dropdown-button {
+  background-color: #3d66a5; /* Blue background */
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Adding the dropdown arrow below the text */
+.dropdown-button::after {
+  content: ' \25BC'; /* Unicode for downward arrow */
+  font-size: 12px; /* Adjust size of the arrow */
+  margin-top: 8px; /* Space between text and arrow */
+}
+
+
+/* Styles for the AttendanceLog section */
+.attendance-log {
+  grid-column: 1 / -1; /* Full width */
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+/* Updated Contact Section */
+.contact-section-container {
+  grid-column: 1 / -1; /* Make it full width */
+  margin-top: 40px;
+  padding: 0; /* Remove padding to allow the section to stretch fully */
+  background: none; /* Remove the blurry background */
+  text-align: center;
+}
+
+/* Add a section with original background */
+.original-background-section {
+  height: 20px; /* Adjust the height as needed */
+  background: none; /* Keep the original background */
+}
+
+/* Black background for the contact section */
+.contact-section {
+  background-color: black;
+  padding: 20px;
+  border-radius: 0; /* Remove the rounding for full width */
+}
+
+.contact-section::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.contact-section p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: white;
+}
+
+.contact-section a {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+/*Top Fancy statement*/
+.fyp-logo-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Faded white background */
+  padding: 20px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center-align content */
+  margin-bottom: 20px; /* Space below the logo section */
+}
+
+.fyp-logo {
+  max-width: 150px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  
+}
+
+.fyp-details {
+  color: #003366; /* Dark blue color for all text */
+  margin-top: 10px; /* Space above details */
+}
+
+.fyp-details h2 {
+  font-size: 36px; /* Increase the font size for the title */
+  color: #003366; /* Ensure title color is dark blue */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.fyp-details p {
+  font-size: 18px; /* Increase the font size for paragraphs */
+  color: #003366; /* Dark blue color for paragraphs */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Change color on hover */
+.fyp-details h2:hover {
+  color: #007bff; /* Change to a bright blue on hover */
+}
+
+.fyp-details p:hover {
+  color: #007bff; /* Change to a bright blue on hover */
+}
+
+.fyp-paragraphs {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space out the paragraphs */
+  margin-top: 20px; /* Space between the header and paragraphs */
+}
+
+.left-paragraph, .right-paragraph {
+  flex: 1; /* Take up remaining space */
+  padding: 30px; /* Add padding for top and bottom spacing */
+  padding-top: 20px; /* Space at the top */
+  padding-bottom: 20px; /* Space at the bottom */
+  padding-left: 70px; /* Space at the start */
+  padding-right: 5px; /* Space at the end */
+  color: #003366; /* Ensure both paragraphs have dark blue text */
+}
+
+.left-paragraph {
+  margin-right: 10px; /* Space between the left and right paragraphs */
+  text-align: left; /* Align text to the left */
+}
+
+.right-paragraph {
+  margin-left: 20px; /* Adjust this value to move closer to the center */
+  margin-right: 20px; /* Space from the right border */
+  text-align: right; /* Align text to the right */
+}

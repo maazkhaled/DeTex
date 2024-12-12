@@ -1,0 +1,76 @@
+/* Styling for the create user button */
+.create-user-btn {
+  background-color: grey; /* Initial grey color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.create-user-btn:hover {
+  background-color: green; /* Green on hover */
+}
+
+/* Centralized container with 70% width and white background */
+.form-container {
+  background-color: rgb(100, 167, 221); /* White background */
+  width: 70%;
+  margin: 20px auto; /* Center the container horizontally with some top margin */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation effect */
+}
+
+/* Input field styles */
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+  color: black; /* Set text color to black */
+
+}
+
+/* Input focus effect */
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+/* Radio button styles */
+label {
+margin-right: 15px;
+font-size: 16px;
+cursor: pointer;
+color: black; /* Set font color to black */
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Submit button style */
+button {
+background-color: #3d66a5; /* Button background */
+color: black !important;              /* Button text color */
+padding: 15px 20px;                   /* Increase padding */
+font-size: 18px;                      /* Increase font size */
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+width: auto;                          /* Allow the button to adjust width */
+min-width: 150px;                     /* Set a minimum width */
+}
+
+
+button:hover {
+  background-color: #1ABC9C; /* Greenish color on hover */
+}

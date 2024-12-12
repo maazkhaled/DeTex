@@ -1,0 +1,49 @@
+body, h1, p, table, th, td, nav, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.create-user-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+div {
+  margin: 10px;
+  padding: 10px;
+}

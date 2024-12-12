@@ -1,0 +1,28 @@
+.UserHome {
+  background-color: #a7cbec;
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.recent-defects-section {
+  margin-top: 30px;
+}
+
+.recent-defects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.recent-defect {
+  text-align: center;
+  max-width: 200px;
+}
+
+.recent-defect img {
+  border: 1px solid #ccc;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,64 @@
+
+/* Full page background */
+.page-background {
+  background-color: rgba(30, 40, 50, 0.8);
+  min-height: 100vh;
+  padding: 20px;
+  color: white; /* Text color for contrast */
+}
+
+.attendance-log-container h1,
+.attendance-log-container h2,
+.attendance-log-container h3 {
+  color: black; /* Set heading text color to black */
+  font-weight: bold; /* Make the text bold */
+  font-size: 1.5em; /* Increase font size for better visibility */
+  margin-bottom: 10px; /* Add some spacing below the headings */
+}
+
+/* Table styling */
+.attendance-log-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.attendance-log-container th,
+.attendance-log-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: black; /* Text color for visibility */
+}
+
+.attendance-log-container th {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker header background */
+}
+
+.attendance-log-container tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle row shading */
+}
+
+.attendance-log-container tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+/* Button styling */
+.attendance-log-container button {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.attendance-log-container button:hover {
+  background-color: #45a049;
+}
+
+.attendance-log-container tr[style*="background-color: red"] {
+  color: white;
+}

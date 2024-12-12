@@ -1,0 +1,110 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for the heatmap */
+  .heatmap-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 1100px;
+    margin: 30px auto;
+  }
+  
+  /* Grid and cells styles */
+  .heatmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted for a more spacious grid */
+    grid-gap: 8px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  /* Heatmap cells */
+  .heatmap-cell {
+    border: none; /* Removed border for a cleaner look */
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 14px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .heatmap-cell:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .heatmap-cell > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  /* Dynamic background for heatmap cells */
+  .heatmap-cell > div {
+    background-color: #e74c3c; /* Default color, will be changed by JavaScript */
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Labels */
+  .x-labels, .y-labels {
+    color: #34495e;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media only screen and (max-width: 768px) {
+    h3 {
+      font-size: 1.5em;
+    }
+  
+    .heatmap-cell {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .x-labels, .y-labels {
+      font-size: 12px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    h3 {
+      font-size: 1.2em;
+    }
+  
+    .heatmap-cell {
+      font-size: 10px;
+      padding: 8px;
+    }
+  
+    .x-labels, .y-labels {
+      font-size: 10px;
+    }
+  }
+  

@@ -1,0 +1,42 @@
+/* backlog.css */
+
+
+
+.image-container {
+  text-align: center; /* Center the image horizontally */
+  margin: 20px 0; /* Add some spacing around the image */
+}
+
+.image-container img {
+  max-width: 100%; /* Make sure the image is responsive and does not overflow its container */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ccc; /* Optional: add a border around the image */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: add some shadow for better visibility */
+}
+
+/* Table styling for backlog items */
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  background-color:  #f2f2f2; /* Slight transparency */
+}
+
+th, td {
+  border: 1px solid  #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  color: black; /* Ensure text is dark for readability */
+}
+
+th {
+  background-color:  #f2f2f2; /* Slight transparency */
+}
+
+tbody tr:nth-child(even) {
+  background-color:  #f2f2f2; /* Slightly darker light grey for even rows with transparency */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.8); /* White background for odd rows with transparency */
+}

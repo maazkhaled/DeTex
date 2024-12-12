@@ -1,0 +1,40 @@
+/* Ensure this CSS file is linked correctly in your project */
+nav {
+
+    background-color: #2C3E50; /* Dark background color */
+    padding: 10px 20px; /* Padding inside the navbar */
+    border-radius: 15px; /* More rounded corners */
+    margin: 20px auto; /* Center the navbar */
+    max-width: 80%; /* Allow the navbar to take up 80% of the page width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center the navbar items horizontally */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Evenly space out the buttons */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure the ul spans the entire navbar */
+}
+
+nav ul li {
+    margin: 0 15px; /* Slightly larger margin between buttons for spacing */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Larger padding for clickable area */
+    color: #ECF0F1; /* Light color for text */
+    border-radius: 10px; /* Rounded corners for buttons */
+    background-color: #3d66a5; /* Blue background */
+    /* Background color for buttons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+    background-color: #1ABC9C; /* Lighter color on hover */
+    color: white; /* Keep text white on hover for contrast */
+}

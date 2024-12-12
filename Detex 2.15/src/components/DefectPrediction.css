@@ -1,0 +1,28 @@
+.DefectPrediction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /* background-image: url('/public/herosection-bg.png'); /* Path to the repeating background image */
+   /* background-repeat: repeat; /* Ensures the image repeats */
+    /* background-color: #1E2832; /* Fallback color in case the image fails to load */
+    padding: 20px; /* Add padding if needed */
+    width: 100%; /* Ensures it covers the width of its container */
+    height: auto; /* Adjust height based on content */
+}
+
+.defects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusts spacing between defect items */
+}
+
+.defect {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items vertically */
+    margin: 10px; /* Adds margin around each defect for better spacing */
+    width: 500px; /* or any other width depending on your design */
+}
+/* styles.css */
+

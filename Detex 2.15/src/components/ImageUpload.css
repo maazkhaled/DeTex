@@ -1,0 +1,92 @@
+/* Apply this style globally, typically in a CSS file that affects the whole document */
+/* Apply this style globally, typically in a CSS file that affects the whole document */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1E2832; /* Fallback background color */
+    background-image: url('/public/herosection-bg.png'); /* Path to your repeating background image */
+    background-repeat: repeat; /* Ensures the image repeats horizontally and vertically */
+    background-size: auto; /* Default size for the background images */
+    height: 100%; /* Ensure it covers the entire height of the body */
+    min-height: 100vh; /* Minimum height to cover the full viewport */
+}
+
+
+/* Specific adjustments for ImageUpload to maintain existing styles */
+.ImageUpload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjusted to auto to inherit naturally */
+    background-color: transparent; /* Make background transparent to show the body's background */
+    padding: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ImageUpload form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.ImageUpload input[type="file"], .ImageUpload button {
+    margin-bottom: 15px;
+}
+
+.image-preview {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.ImageUpload input[type="file"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ImageUpload button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ImageUpload button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Additional style for the first form to remove the rounded bottom if needed */
+.ImageUpload form:first-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.upload-logo {
+    max-width: 100px; /* Adjust the width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures it takes up its own line if necessary */
+    margin: 10px auto; /* Centers the logo and adds space around it */
+}
+

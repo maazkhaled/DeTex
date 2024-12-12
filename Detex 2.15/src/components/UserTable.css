@@ -1,0 +1,54 @@
+/* Full page background */
+.page-background {
+  background-color: rgba(30, 40, 50, 0.8);
+  min-height: 100vh;
+  padding: 20px;
+  color: white; /* Text color for contrast */
+}
+
+/* Styling for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white; /* Add this line to make table text visible */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  color: white; /* Add this line to make table text visible */
+}
+
+/* Button styles in the actions column */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Space between buttons */
+  color: white; /* Add this line to make button text visible */
+}
+
+button:hover {
+  opacity: 0.8; /* Slightly transparent on hover */
+}
+
+/* Styling for the delete button */
+button.delete-btn {
+  background-color: lightcoral; /* Light red background for delete */
+}
+
+button.delete-btn:hover {
+  background-color: red; /* Darker red on hover */
+}
+
+/* Styling for the assign privileges button */
+button.assign-privileges-btn {
+  background-color:#1ABC9C; /* Green background for assign privileges */
+}
+
+button.assign-privileges-btn:hover {
+  background-color: darkgreen; /* Darker green on hover */
+}
