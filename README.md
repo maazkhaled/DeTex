@@ -67,8 +67,8 @@ Steps
 Clone the repository:
 
 
-git clone https://github.com/your-username/textile-defect-detection.git
-cd textile-defect-detection
+git clone https://github.com/maazkhaled/DeTex.git
+cd Detex
 
 Install dependencies:
 
