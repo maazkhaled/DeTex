@@ -68,6 +68,7 @@ Clone the repository:
 
 
 git clone https://github.com/maazkhaled/DeTex.git
+
 cd Detex
 
 Install dependencies:
@@ -106,20 +107,9 @@ Check the 3 most recent defects with detailed information.
 Change Fabric Type:
 
 Select the fabric type from the dropdown for accurate defect categorization.
-Project Structure
 
-.
-├── backend/                 # Backend server code
-│   ├── models/              # MongoDB models
-│   ├── routes/              # API routes
-│   ├── controllers/         # Business logic
-│   ├── server.js            # Main backend server
-├── frontend/                # Frontend code (React.js)
-│   ├── components/          # React components
-│   ├── pages/               # Main pages
-│   ├── App.js               # Entry point
-├── README.md                # Project documentation
-└── package.json             # Dependencies and scripts
+
+
 API Endpoints
 Backend
 
